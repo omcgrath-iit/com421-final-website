@@ -19,19 +19,19 @@ body {
 }
 
 /* Handling width and margin for body elements */
-p, h1, h2, h3, ul, dl, table {
+p, h1, h2, h3, ul, dl, table, figure {
 	margin: 1.0rem auto 1.0rem;
 	width: 800px;
 }
 
 @media (max-width: 850px) {
-	p, h1, h2, h3, ul, dl, table {
+	p, h1, h2, h3, ul, dl, table, figure {
 		width: 500px;
 	}
 }
 
 @media (max-width: 550px) {
-	p, h1, h2, h3, ul, dl, table {
+	p, h1, h2, h3, ul, dl, table, figure {
 		width: initial;
 		margin: 1.0rem;
 	}
@@ -77,9 +77,23 @@ dt {
 	font-weight: bold;
 }
 
+/* Image */
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 50vh;
+	margin: 1rem auto;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+figcaption {
+	text-align: center;
+}
+
 /* Buttons */
 .button {
-	background: linear-gradient(45deg, #ff8800, #ff7700), #ff8800;
+	background: linear-gradient(45deg, #33ff9f, #11dd7d), #33ff9f;
 	padding: 1rem;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -104,7 +118,7 @@ dt {
 
 /* Header */
 header {
-	background: linear-gradient(45deg, #ff8800, #ff7700), #ff8800;
+	background: linear-gradient(45deg, #33ff9f, #11dd7d), #33ff9f;
 	border-bottom: 1px solid white;
 	color: #000000;
 	margin-bottom: 2rem;
